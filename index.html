@@ -25,22 +25,15 @@
     </div>
 
     <div id="graph-container">
-      <!--<div id="graph-placeholder">Graphing Tool Canvas Placeholder</div>!-->
+      <!-- Plotly.js Graph is put here; logic is controlled in index.js !-->
+    </div>
+
+    <div id="Debugging-Area">
+        <p id="Debug-Text">Debugging Ready</p>
     </div>
   </main>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-
-    //plotly code
-    TESTER = document.getElementById('graph-container');
-	  Plotly.newPlot( TESTER, [{
-	  x: [1, 2, 3, 4, 5],
-	  y: [1, 2, 4, 8, 16] }], {
-	  margin: { t: 0 } } );
-  </script>
+  <script src="index.js"></script>
 
 </body>
 </html>
